@@ -1,0 +1,5 @@
+C:\Users\Usuario\source\repos\Infotech\Infotech\obj\Debug\Infotech.csprojAssemblyReference.cache
+C:\Users\Usuario\source\repos\Infotech\Infotech\obj\Debug\Infotech.Form1.resources
+C:\Users\Usuario\source\repos\Infotech\Infotech\obj\Debug\Infotech.Properties.Resources.resources
+C:\Users\Usuario\source\repos\Infotech\Infotech\obj\Debug\Infotech.csproj.GenerateResource.cache
+C:\Users\Usuario\source\repos\Infotech\Infotech\obj\Debug\Infotech.csproj.CoreCompileInputs.cache
