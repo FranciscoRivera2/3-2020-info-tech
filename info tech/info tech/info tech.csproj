@@ -52,8 +52,81 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="almacenamiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="almacenamiento.Designer.cs">
+      <DependentUpon>almacenamiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="monitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include=".Designer.cs">
+      <DependentUpon>monitor.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gabinete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gabinete.Designer.cs">
+      <DependentUpon>gabinete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fuente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fuente.Designer.cs">
+      <DependentUpon>fuente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mother.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mother.Designer.cs">
+      <DependentUpon>mother.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gpu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gpu.Designer.cs">
+      <DependentUpon>gpu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rams.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rams.Designer.cs">
+      <DependentUpon>rams.cs</DependentUpon>
+    </Compile>
+    <Compile Include="procesadores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="procesadores.Designer.cs">
+      <DependentUpon>procesadores.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="almacenamiento.resx">
+      <DependentUpon>almacenamiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fuente.resx">
+      <DependentUpon>fuente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gabinete.resx">
+      <DependentUpon>gabinete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gpu.resx">
+      <DependentUpon>gpu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mother.resx">
+      <DependentUpon>mother.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="procesadores.resx">
+      <DependentUpon>procesadores.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -63,6 +136,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="rams.resx">
+      <DependentUpon>rams.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
