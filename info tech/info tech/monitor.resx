@@ -118,22 +118,18 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="label1.Text" xml:space="preserve">
-    <value>
-Al comprar una placa madre tenes que tener en cuenta principalmente las siguientes caracteriticas.
+    <value>al comprar un monitor tenes que tener en cuenta principalmente las siguientes caracteriticas.
+tipo de panel: Existen tres tipos TN son los que peor calidad tienen, pero su tiempo de respuesta y precio es bajo, VA su calidad, tiempo de respuesta y precio es mayor que la de los TN pero menor que la de un IPS.
 
-socket: Este debe ser compatible con el socket del procesador para poder ser compatible.
+iluminacion del panel: Existen las LSD y LED, las LED tienen mejor contraste, consumo energético y menor efecto fantasma.
 
-frecuencia: La cantidad de frecuencia que soporta la placa madre puede limitar el rendimiento de la frecuencia de los componentes.
-
-overclok: La placa madre debe de estar desbloqueada para overclok para que puedas overclokear los componentes.
-
-modulos: Estos son la cantidad de módulos de ram que se pueden colocar.
-
-puertos: Debes de tener en cuenta la cantidad y tipo de puertos USB (mientas más alto sea el número de estos mayor rapidez).
-
-tamaño: Están los más comunes que son los ATX le siguen las micro ATX que son un poco más pequeñas y por ultimo las mini ATX que es mayor mente usada para pequeños sistemas.
-
-marca: Hay placas madre para amd y para intel (ninguna es mejor, la diferencia es la compatibilidad con cada una).
+cdm2: Las candelas por metro cuadrado mientras más son mayor iluminación tendrá el monitor.
+tamaño: Esta se mide en pulgadas que es la unidad de medida,el más popular es de 24 pulgadas.
+hz: Es la tasa de refresco del monitor lo estándar es 60 esto significa que mostrara 60 imágenes por segundo siempre en tanto y en cuanto la pc tira 60 cuadros por segundo.
+puertos: Los monitores pueden tener 3 tipos de conectores VGA, hdmi y display port. los VGA son los que peor rendimiento tienen, los hdmi tienen mejor rendimiento que los vga pero peor que los display port. generalmente traen más de un puerto para poder elegir según nuestra conveniencia. estos pueden limitar nuestros Hz y calidad de imagen.
+formato: Los más populares y estándar son los 16:9 aunque los 21:9 son muy populares para contenido multimedia y edición.
+resolucion: Esta determinara la calidad de la imagen lo más popular hoy en día es 1920x 1080 (1080p).
+curva: Los monitores curvos son mejores para contenido multimedia por su inmersión.
 </value>
   </data>
 </root>

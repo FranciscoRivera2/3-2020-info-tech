@@ -117,4 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label1.Text" xml:space="preserve">
+    <value>al comprar una fuente de poder tenes que tener en cuenta principalmente las siguientes caracteriticas.
+certifiacion: Esta asegura que mínimo el 80 por ciento de los Watts de la fuente serán usados, a diferencia de las que no tienen certificación (genéricas) estas al no asegurar una cantidad de Watts mínima puede enviar menos de lo requerido causando apagones por falta de energía o más causando mayor temperatura que deriva en peor rendimiento ya que los componentes bajan su rendimiento para protegerse debido a la temperatura. este porcentaje aumenta depende de la certificación por ejemplo 80 plus Gold.
+watts: Debe soportar lo pedido por la pc y lo ideal sería que este sobrada para poder actualizar la pc y no tener que cambiar esta.
+Modelo: Existen dos tipos las modulares y las no modulares, las modulares tienen la posibilidad de poner y sacar los cables por lo tanto lo que no vallamos a usar no estarían conectados, al contrario que las no modulares.
+</value>
+  </data>
 </root>

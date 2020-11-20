@@ -117,4 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label1.Text" xml:space="preserve">
+    <value>al comprar un gabinete tenes que tener en cuenta principalmente las siguientes caracteriticas.
+flujo: Es la circulación de aire que hay dentro del gabinete.
+puertos: La cantidad de puertos frontales y que tipos.
+tamaño: Están los más comunes que son los ATX le siguen los micro ATX que son un poco más pequeñas y por ultimo los mini ATX.
+</value>
+  </data>
 </root>
