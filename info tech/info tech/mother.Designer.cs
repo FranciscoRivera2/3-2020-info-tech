@@ -33,10 +33,10 @@ namespace info_tech
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.lblmodulos1 = new System.Windows.Forms.Label();
-            this.lblmodulos2 = new System.Windows.Forms.Label();
-            this.lblpuertos1 = new System.Windows.Forms.Label();
-            this.lblpuertos2 = new System.Windows.Forms.Label();
+            this.lblModulos1 = new System.Windows.Forms.Label();
+            this.lblModulos2 = new System.Windows.Forms.Label();
+            this.lblPuertos1 = new System.Windows.Forms.Label();
+            this.lblPuertos2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -74,52 +74,52 @@ namespace info_tech
             this.comboBox2.TabIndex = 2;
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
-            // lblmodulos1
+            // lblModulos1
             // 
-            this.lblmodulos1.AutoSize = true;
-            this.lblmodulos1.Location = new System.Drawing.Point(18, 532);
-            this.lblmodulos1.Name = "lblmodulos1";
-            this.lblmodulos1.Size = new System.Drawing.Size(73, 20);
-            this.lblmodulos1.TabIndex = 3;
-            this.lblmodulos1.Text = "modulos:";
-            this.lblmodulos1.Click += new System.EventHandler(this.lblmodulos1_Click);
+            this.lblModulos1.AutoSize = true;
+            this.lblModulos1.Location = new System.Drawing.Point(18, 532);
+            this.lblModulos1.Name = "lblModulos1";
+            this.lblModulos1.Size = new System.Drawing.Size(73, 20);
+            this.lblModulos1.TabIndex = 3;
+            this.lblModulos1.Text = "Modulos:";
+            this.lblModulos1.Click += new System.EventHandler(this.lblmodulos1_Click);
             // 
-            // lblmodulos2
+            // lblModulos2
             // 
-            this.lblmodulos2.AutoSize = true;
-            this.lblmodulos2.Location = new System.Drawing.Point(971, 532);
-            this.lblmodulos2.Name = "lblmodulos2";
-            this.lblmodulos2.Size = new System.Drawing.Size(73, 20);
-            this.lblmodulos2.TabIndex = 4;
-            this.lblmodulos2.Text = "modulos:";
+            this.lblModulos2.AutoSize = true;
+            this.lblModulos2.Location = new System.Drawing.Point(971, 532);
+            this.lblModulos2.Name = "lblModulos2";
+            this.lblModulos2.Size = new System.Drawing.Size(73, 20);
+            this.lblModulos2.TabIndex = 4;
+            this.lblModulos2.Text = "Modulos:";
             // 
-            // lblpuertos1
+            // lblPuertos1
             // 
-            this.lblpuertos1.AutoSize = true;
-            this.lblpuertos1.Location = new System.Drawing.Point(18, 584);
-            this.lblpuertos1.Name = "lblpuertos1";
-            this.lblpuertos1.Size = new System.Drawing.Size(67, 20);
-            this.lblpuertos1.TabIndex = 5;
-            this.lblpuertos1.Text = "puertos:";
+            this.lblPuertos1.AutoSize = true;
+            this.lblPuertos1.Location = new System.Drawing.Point(18, 584);
+            this.lblPuertos1.Name = "lblPuertos1";
+            this.lblPuertos1.Size = new System.Drawing.Size(68, 20);
+            this.lblPuertos1.TabIndex = 5;
+            this.lblPuertos1.Text = "Puertos:";
             // 
-            // lblpuertos2
+            // lblPuertos2
             // 
-            this.lblpuertos2.AutoSize = true;
-            this.lblpuertos2.Location = new System.Drawing.Point(977, 584);
-            this.lblpuertos2.Name = "lblpuertos2";
-            this.lblpuertos2.Size = new System.Drawing.Size(67, 20);
-            this.lblpuertos2.TabIndex = 6;
-            this.lblpuertos2.Text = "puertos:";
+            this.lblPuertos2.AutoSize = true;
+            this.lblPuertos2.Location = new System.Drawing.Point(977, 584);
+            this.lblPuertos2.Name = "lblPuertos2";
+            this.lblPuertos2.Size = new System.Drawing.Size(68, 20);
+            this.lblPuertos2.TabIndex = 6;
+            this.lblPuertos2.Text = "Puertos:";
             // 
             // mother
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1443, 849);
-            this.Controls.Add(this.lblpuertos2);
-            this.Controls.Add(this.lblpuertos1);
-            this.Controls.Add(this.lblmodulos2);
-            this.Controls.Add(this.lblmodulos1);
+            this.Controls.Add(this.lblPuertos2);
+            this.Controls.Add(this.lblPuertos1);
+            this.Controls.Add(this.lblModulos2);
+            this.Controls.Add(this.lblModulos1);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label1);
@@ -138,9 +138,9 @@ namespace info_tech
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Label lblmodulos1;
-        private System.Windows.Forms.Label lblmodulos2;
-        private System.Windows.Forms.Label lblpuertos1;
-        private System.Windows.Forms.Label lblpuertos2;
+        private System.Windows.Forms.Label lblModulos1;
+        private System.Windows.Forms.Label lblModulos2;
+        private System.Windows.Forms.Label lblPuertos1;
+        private System.Windows.Forms.Label lblPuertos2;
     }
 }

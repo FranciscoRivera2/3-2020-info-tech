@@ -42,7 +42,7 @@ namespace info_tech
                 //abrimos coneccion
                 con.Open();
                 // comando de lo que va a ser "SELECT nombre de campo FROM nombre de entidad WHERE Id = ...", con
-                OleDbCommand cmd = new OleDbCommand("SELECT modulos FROM mother1 WHERE Id = 1", con);
+                OleDbCommand cmd = new OleDbCommand("SELECT Modulos FROM mother1 WHERE Id = 1", con);
                 //lee lo que ejecuto el cmd
                 OleDbDataReader rd = cmd.ExecuteReader();
                 rd.Read();
@@ -50,7 +50,7 @@ namespace info_tech
                 //en una variable string guarda lo que saco de la base de datos
                 string canModulos = rd.GetString(0);
                 // aca abajo iria el label en donde se imprime el string previamente dicho
-                lblmodulos1.Text = "modulos:" + canModulos;
+                lblModulos1.Text = "Modulos:" + canModulos;
 
 
             }
@@ -61,7 +61,7 @@ namespace info_tech
                 //abrimos coneccion
                 con.Open();
                 // comando de lo que va a ser "SELECT nombre de campo FROM nombre de entidad WHERE Id = ...", con
-                OleDbCommand cmd = new OleDbCommand("SELECT modulos FROM mother1 WHERE Id = 2", con);
+                OleDbCommand cmd = new OleDbCommand("SELECT Modulos FROM mother1 WHERE Id = 2", con);
                 //lee lo que ejecuto el cmd
                 OleDbDataReader rd = cmd.ExecuteReader();
                 rd.Read();
@@ -69,7 +69,7 @@ namespace info_tech
                 //en una variable string guarda lo que saco de la base de datos
                 string canModulos = rd.GetString(0);
                 // aca abajo iria el label en donde se imprime el string previamente dicho
-                lblmodulos1.Text = "modulos:" + canModulos;
+                lblModulos1.Text = "Modulos:" + canModulos;
 
 
             }
@@ -80,7 +80,7 @@ namespace info_tech
                 //abrimos coneccion
                 con.Open();
                 // comando de lo que va a ser "SELECT nombre de campo FROM nombre de entidad WHERE Id = ...", con
-                OleDbCommand cmd = new OleDbCommand("SELECT modulos FROM mother1 WHERE Id = 1", con);
+                OleDbCommand cmd = new OleDbCommand("SELECT Modulos FROM mother1 WHERE Id = 1", con);
                 //lee lo que ejecuto el cmd
                 OleDbDataReader rd = cmd.ExecuteReader();
                 rd.Read();
@@ -88,7 +88,7 @@ namespace info_tech
                 //en una variable string guarda lo que saco de la base de datos
                 string canModulos = rd.GetString(0);
                 // aca abajo iria el label en donde se imprime el string previamente dicho
-                lblmodulos2.Text = "modulos:" + canModulos;
+                lblModulos2.Text = "Modulos:" + canModulos;
 
 
             }
@@ -99,7 +99,7 @@ namespace info_tech
                 //abrimos coneccion
                 con.Open();
                 // comando de lo que va a ser "SELECT nombre de campo FROM nombre de entidad WHERE Id = ...", con
-                OleDbCommand cmd = new OleDbCommand("SELECT modulos FROM mother1 WHERE Id = 2", con);
+                OleDbCommand cmd = new OleDbCommand("SELECT Modulos FROM mother1 WHERE Id = 2", con);
                 //lee lo que ejecuto el cmd
                 OleDbDataReader rd = cmd.ExecuteReader();
                 rd.Read();
@@ -107,12 +107,12 @@ namespace info_tech
                 //en una variable string guarda lo que saco de la base de datos
                 string canModulos = rd.GetString(0);
                 // aca abajo iria el label en donde se imprime el string previamente dicho
-                lblmodulos2.Text = "modulos:" + canModulos;
+                lblModulos2.Text = "Modulos:" + canModulos;
 
 
             }
         }
-        private void puertos()
+        private void Puertos()
         {
             if (comboBox1.Text == "Gigabyte Z390 M")
             {
@@ -121,15 +121,15 @@ namespace info_tech
                 //abrimos coneccion
                 con.Open();
                 // comando de lo que va a ser "SELECT nombre de campo FROM nombre de entidad WHERE Id = ...", con
-                OleDbCommand cmd = new OleDbCommand("SELECT puertos FROM mother1 WHERE Id = 1", con);
+                OleDbCommand cmd = new OleDbCommand("SELECT Puertos FROM mother1 WHERE Id = 1", con);
                 //lee lo que ejecuto el cmd
                 OleDbDataReader rd = cmd.ExecuteReader();
                 rd.Read();
                 // hasta aca 
                 //en una variable string guarda lo que saco de la base de datos
-                string canModulos = rd.GetString(0);
+                string canPuertos = rd.GetString(0);
                 // aca abajo iria el label en donde se imprime el string previamente dicho
-                lblpuertos1.Text = "puertos:" + canModulos;
+                lblPuertos1.Text = "Puertos:" + canPuertos;
 
             }
             else if (comboBox1.Text == "ASUS PRIME B460M - A")
@@ -139,15 +139,15 @@ namespace info_tech
                 //abrimos coneccion
                 con.Open();
                 // comando de lo que va a ser "SELECT nombre de campo FROM nombre de entidad WHERE Id = ...", con
-                OleDbCommand cmd = new OleDbCommand("SELECT puertos FROM mother1 WHERE Id = 2", con);
+                OleDbCommand cmd = new OleDbCommand("SELECT Puertos FROM mother1 WHERE Id = 2", con);
                 //lee lo que ejecuto el cmd
                 OleDbDataReader rd = cmd.ExecuteReader();
                 rd.Read();
                 // hasta aca 
                 //en una variable string guarda lo que saco de la base de datos
-                string canModulos = rd.GetString(0);
+                string canPuertos = rd.GetString(0);
                 // aca abajo iria el label en donde se imprime el string previamente dicho
-                lblpuertos1.Text = "puertos:" + canModulos;
+                lblPuertos1.Text = "Puertos:" + canPuertos;
             }
             if (comboBox2.Text == "Gigabyte Z390 M")
             {
@@ -156,15 +156,15 @@ namespace info_tech
                 //abrimos coneccion
                 con.Open();
                 // comando de lo que va a ser "SELECT nombre de campo FROM nombre de entidad WHERE Id = ...", con
-                OleDbCommand cmd = new OleDbCommand("SELECT puertos FROM mother1 WHERE Id = 1", con);
+                OleDbCommand cmd = new OleDbCommand("SELECT Puertos FROM mother1 WHERE Id = 1", con);
                 //lee lo que ejecuto el cmd
                 OleDbDataReader rd = cmd.ExecuteReader();
                 rd.Read();
                 // hasta aca 
                 //en una variable string guarda lo que saco de la base de datos
-                string canModulos = rd.GetString(0);
+                string canPuertos = rd.GetString(0);
                 // aca abajo iria el label en donde se imprime el string previamente dicho
-                lblpuertos2.Text = "modulos:" + canModulos;
+                lblPuertos2.Text = "Puertos:" + canPuertos;
 
 
             }
@@ -175,15 +175,15 @@ namespace info_tech
                 //abrimos coneccion
                 con.Open();
                 // comando de lo que va a ser "SELECT nombre de campo FROM nombre de entidad WHERE Id = ...", con
-                OleDbCommand cmd = new OleDbCommand("SELECT puertos FROM mother1 WHERE Id = 2", con);
+                OleDbCommand cmd = new OleDbCommand("SELECT Puertos FROM mother1 WHERE Id = 2", con);
                 //lee lo que ejecuto el cmd
                 OleDbDataReader rd = cmd.ExecuteReader();
                 rd.Read();
                 // hasta aca 
                 //en una variable string guarda lo que saco de la base de datos
-                string canpuertos = rd.GetString(0);
+                string canPuertos = rd.GetString(0);
                 // aca abajo iria el label en donde se imprime el string previamente dicho
-                lblpuertos2.Text = "puertos:" + canpuertos;
+                lblPuertos2.Text = "Puertos:" + canPuertos;
             }
 
         }
@@ -192,7 +192,7 @@ namespace info_tech
         {
             Modulos();
 
-            puertos();
+            Puertos();
         }
 
         private void lblmodulos1_Click(object sender, EventArgs e)
