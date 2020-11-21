@@ -192,5 +192,166 @@ namespace info_tech
             }
 
         }
+        private void Hercios()
+        {
+            if (comboBox1.Text == "LG 24gl600f")
+            {
+                //coneccion con la basedata
+                OleDbConnection con = new OleDbConnection(@"Provider = Microsoft.ACE.OLEDB.12.0; Data Source = nuevainfotech.accdb");
+                //abrimos coneccion
+                con.Open();
+                // comando de lo que va a ser "SELECT nombre de campo FROM nombre de entidad WHERE Id = ...", con
+                OleDbCommand cmd = new OleDbCommand("SELECT Hercios FROM monitor1 WHERE Id = 1", con);
+                //lee lo que ejecuto el cmd
+                OleDbDataReader rd = cmd.ExecuteReader();
+                rd.Read();
+                // hasta aca 
+                //en una variable string guarda lo que saco de la base de datos
+                string canHercios = rd.GetString(0);
+                // aca abajo iria el label en donde se imprime el string previamente dicho
+                lblHercios1.Text = "Hercios:" + canHercios;
+
+            }
+            else if (comboBox1.Text == "Viewsonic VX3276-4K-MHD")
+            {
+                //coneccion con la basedata
+                OleDbConnection con = new OleDbConnection(@"Provider = Microsoft.ACE.OLEDB.12.0; Data Source = nuevainfotech.accdb");
+                //abrimos coneccion
+                con.Open();
+                // comando de lo que va a ser "SELECT nombre de campo FROM nombre de entidad WHERE Id = ...", con
+                OleDbCommand cmd = new OleDbCommand("SELECT Hercios FROM monitor1 WHERE Id = 2", con);
+                //lee lo que ejecuto el cmd
+                OleDbDataReader rd = cmd.ExecuteReader();
+                rd.Read();
+                // hasta aca 
+                //en una variable string guarda lo que saco de la base de datos
+                string canHercios = rd.GetString(0);
+                // aca abajo iria el label en donde se imprime el string previamente dicho
+                lblHercios1.Text = "Hercios:" + canHercios;
+            }
+            if (comboBox2.Text == "LG 24gl600f")
+            {
+                //coneccion con la basedata
+                OleDbConnection con = new OleDbConnection(@"Provider = Microsoft.ACE.OLEDB.12.0; Data Source = nuevainfotech.accdb");
+                //abrimos coneccion
+                con.Open();
+                // comando de lo que va a ser "SELECT nombre de campo FROM nombre de entidad WHERE Id = ...", con
+                OleDbCommand cmd = new OleDbCommand("SELECT Hercios FROM monitor1 WHERE Id = 1", con);
+                //lee lo que ejecuto el cmd
+                OleDbDataReader rd = cmd.ExecuteReader();
+                rd.Read();
+                // hasta aca 
+                //en una variable string guarda lo que saco de la base de datos
+                string canHercios = rd.GetString(0);
+                // aca abajo iria el label en donde se imprime el string previamente dicho
+                lblHercios2.Text = "Hercios:" + canHercios;
+
+
+            }
+            else if (comboBox2.Text == "Viewsonic VX3276-4K-MHD")
+            {
+                //coneccion con la basedata
+                OleDbConnection con = new OleDbConnection(@"Provider = Microsoft.ACE.OLEDB.12.0; Data Source = nuevainfotech.accdb");
+                //abrimos coneccion
+                con.Open();
+                // comando de lo que va a ser "SELECT nombre de campo FROM nombre de entidad WHERE Id = ...", con
+                OleDbCommand cmd = new OleDbCommand("SELECT Hercios FROM monitor1 WHERE Id = 2", con);
+                //lee lo que ejecuto el cmd
+                OleDbDataReader rd = cmd.ExecuteReader();
+                rd.Read();
+                // hasta aca 
+                //en una variable string guarda lo que saco de la base de datos
+                string canHercios = rd.GetString(0);
+                // aca abajo iria el label en donde se imprime el string previamente dicho
+                lblHercios2.Text = "Hercios:" + canHercios;
+            }
+
+        }
+        private void Pulgadas()
+        {
+            if (comboBox1.Text == "LG 24gl600f")
+            {
+                //coneccion con la basedata
+                OleDbConnection con = new OleDbConnection(@"Provider = Microsoft.ACE.OLEDB.12.0; Data Source = nuevainfotech.accdb");
+                //abrimos coneccion
+                con.Open();
+                // comando de lo que va a ser "SELECT nombre de campo FROM nombre de entidad WHERE Id = ...", con
+                OleDbCommand cmd = new OleDbCommand("SELECT Pulgadas FROM monitor1 WHERE Id = 1", con);
+                //lee lo que ejecuto el cmd
+                OleDbDataReader rd = cmd.ExecuteReader();
+                rd.Read();
+                // hasta aca 
+                //en una variable string guarda lo que saco de la base de datos
+                string canPulgadas = rd.GetString(0);
+                // aca abajo iria el label en donde se imprime el string previamente dicho
+                lblPulgadas1.Text = "Pulgadas:" + canPulgadas;
+
+            }
+            else if (comboBox1.Text == "Viewsonic VX3276-4K-MHD")
+            {
+                //coneccion con la basedata
+                OleDbConnection con = new OleDbConnection(@"Provider = Microsoft.ACE.OLEDB.12.0; Data Source = nuevainfotech.accdb");
+                //abrimos coneccion
+                con.Open();
+                // comando de lo que va a ser "SELECT nombre de campo FROM nombre de entidad WHERE Id = ...", con
+                OleDbCommand cmd = new OleDbCommand("SELECT Pulgadas FROM monitor1 WHERE Id = 2", con);
+                //lee lo que ejecuto el cmd
+                OleDbDataReader rd = cmd.ExecuteReader();
+                rd.Read();
+                // hasta aca 
+                //en una variable string guarda lo que saco de la base de datos
+                string canPulgadas = rd.GetString(0);
+                // aca abajo iria el label en donde se imprime el string previamente dicho
+                lblPulgadas1.Text = "Pulgadas:" + canPulgadas;
+            }
+            if (comboBox2.Text == "LG 24gl600f")
+            {
+                //coneccion con la basedata
+                OleDbConnection con = new OleDbConnection(@"Provider = Microsoft.ACE.OLEDB.12.0; Data Source = nuevainfotech.accdb");
+                //abrimos coneccion
+                con.Open();
+                // comando de lo que va a ser "SELECT nombre de campo FROM nombre de entidad WHERE Id = ...", con
+                OleDbCommand cmd = new OleDbCommand("SELECT Pulgadas FROM monitor1 WHERE Id = 1", con);
+                //lee lo que ejecuto el cmd
+                OleDbDataReader rd = cmd.ExecuteReader();
+                rd.Read();
+                // hasta aca 
+                //en una variable string guarda lo que saco de la base de datos
+                string canPulgadas = rd.GetString(0);
+                // aca abajo iria el label en donde se imprime el string previamente dicho
+                lblPulgadas2.Text = "Pulgadas:" + canPulgadas;
+
+
+            }
+            else if (comboBox2.Text == "Viewsonic VX3276-4K-MHD")
+            {
+                //coneccion con la basedata
+                OleDbConnection con = new OleDbConnection(@"Provider = Microsoft.ACE.OLEDB.12.0; Data Source = nuevainfotech.accdb");
+                //abrimos coneccion
+                con.Open();
+                // comando de lo que va a ser "SELECT nombre de campo FROM nombre de entidad WHERE Id = ...", con
+                OleDbCommand cmd = new OleDbCommand("SELECT Pulgadas FROM monitor1 WHERE Id = 2", con);
+                //lee lo que ejecuto el cmd
+                OleDbDataReader rd = cmd.ExecuteReader();
+                rd.Read();
+                // hasta aca 
+                //en una variable string guarda lo que saco de la base de datos
+                string canPulgadas = rd.GetString(0);
+                // aca abajo iria el label en donde se imprime el string previamente dicho
+                lblPulgadas2.Text = "Pulgadas:" + canPulgadas;
+            }
+
+        }
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Panel();
+
+            Resolución();
+
+            Hercios();
+
+            Pulgadas();
+
+        }
     }   
 }

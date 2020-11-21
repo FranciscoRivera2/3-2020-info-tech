@@ -188,5 +188,11 @@ namespace info_tech
             }
 
         }
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Certificación();
+
+            puertos();
+        }
     }
 }
