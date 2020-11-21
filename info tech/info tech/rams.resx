@@ -117,4 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label1.Text" xml:space="preserve">
+    <value>al comprar memorias ram tenes que tener en cuenta principalmente las siguientes caracteriticas.
+frecuencia: Esta se mide en MHZ y mientras más alta es más veloz, estaría bueno que esta sea acorde a la frecuencia del procesador.
+DDR: Existe DDR, DDR2 ,DDR3, DDR4 y DDR5. Mientras más alta es más veloz.
+almacenamiento: Existen módulos de 4gb, 8gb y 16gb. para las pc de escritorio con 4gb está bien pero si es para jugar se necesitan 8gb.
+canales: Se pueden usar dos memorias como si fuese una haciendo que esta tenga el doble de canal de transmisión de datos (dual chanel), para esto las memorias deben de ser iguales, misma marca y modelo.
+
+</value>
+  </data>
 </root>
