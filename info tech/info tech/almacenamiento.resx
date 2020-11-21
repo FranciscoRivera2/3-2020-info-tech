@@ -117,4 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label1.Text" xml:space="preserve">
+    <value>al comprar almacenamiento tenes que tener en cuenta principalmente las siguientes caracteriticas.
+Tipo: Existen 3 tipos HDD este es lento, pero economico, SSD que es rápido y su precio es más alto y M.2 que es un poco más rápido que SSD y su precio es un poco mayor al del SSD.
+almacenamiento: Es la cantidad de almacenamiento disponible, es muy popular tener un HDD para todo y un SSD solo para el sistema.
+</value>
+  </data>
 </root>
