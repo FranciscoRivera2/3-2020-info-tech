@@ -19,13 +19,14 @@ namespace info_tech
 
         private void button1_Click(object sender, EventArgs e)
         {
-            almacenamiento frm2 = new almacenamiento();
-            frm2.Show(owner: almacenamiento);
+            var newForm = new almacenamiento();
+            newForm.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            var newForm = new rams();
+            newForm.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -40,7 +41,8 @@ namespace info_tech
 
         private void button5_Click(object sender, EventArgs e)
         {
-
+            var newForm = new fuente();
+            newForm.Show();
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -50,10 +52,16 @@ namespace info_tech
 
         private void button7_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void button8_Click(object sender, EventArgs e)
+        {
+            var newForm = new mother();
+            newForm.Show();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }

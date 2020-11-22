@@ -11,3 +11,8 @@ C:\Users\Usuario\Documents\GitHub\3-2020-info-tech\info tech\info tech\obj\Debug
 C:\Users\Usuario\Documents\GitHub\3-2020-info-tech\info tech\info tech\obj\Debug\info_tech.rams.resources
 C:\Users\Usuario\Documents\GitHub\3-2020-info-tech\info tech\info tech\obj\Debug\info tech.csproj.GenerateResource.cache
 C:\Users\Usuario\Documents\GitHub\3-2020-info-tech\info tech\info tech\obj\Debug\info tech.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\GitHub\3-2020-info-tech\info tech\info tech\bin\Debug\info tech.exe.config
+C:\Users\Usuario\Documents\GitHub\3-2020-info-tech\info tech\info tech\bin\Debug\info tech.exe
+C:\Users\Usuario\Documents\GitHub\3-2020-info-tech\info tech\info tech\bin\Debug\info tech.pdb
+C:\Users\Usuario\Documents\GitHub\3-2020-info-tech\info tech\info tech\obj\Debug\info tech.exe
+C:\Users\Usuario\Documents\GitHub\3-2020-info-tech\info tech\info tech\obj\Debug\info tech.pdb
