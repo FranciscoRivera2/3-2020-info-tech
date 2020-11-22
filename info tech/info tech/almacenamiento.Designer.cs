@@ -37,6 +37,7 @@ namespace info_tech
             this.lblTipo2 = new System.Windows.Forms.Label();
             this.lblAlmacenamiento1 = new System.Windows.Forms.Label();
             this.lblAlmacenamiento2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -108,11 +109,22 @@ namespace info_tech
             this.lblAlmacenamiento2.TabIndex = 6;
             this.lblAlmacenamiento2.Text = "Almacenamiento:";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(1101, 395);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(95, 40);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Atras";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // almacenamiento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.ClientSize = new System.Drawing.Size(1604, 881);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.lblAlmacenamiento2);
             this.Controls.Add(this.lblAlmacenamiento1);
             this.Controls.Add(this.lblTipo2);
@@ -137,5 +149,6 @@ namespace info_tech
         private System.Windows.Forms.Label lblTipo2;
         private System.Windows.Forms.Label lblAlmacenamiento1;
         private System.Windows.Forms.Label lblAlmacenamiento2;
+        private System.Windows.Forms.Button button1;
     }
 }

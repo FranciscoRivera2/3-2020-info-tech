@@ -31,12 +31,14 @@ namespace info_tech
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            var newForm = new gpu();
+            newForm.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            var newForm = new procesadores();
+            newForm.Show();
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -47,12 +49,14 @@ namespace info_tech
 
         private void button6_Click(object sender, EventArgs e)
         {
-
+            var newForm = new gabinete();
+            newForm.Show();
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            
+            var newForm = new Form3();
+            newForm.Show();
         }
 
         private void button8_Click(object sender, EventArgs e)

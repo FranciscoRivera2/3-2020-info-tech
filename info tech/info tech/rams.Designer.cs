@@ -37,8 +37,9 @@ namespace info_tech
             this.lblFrecuencia2 = new System.Windows.Forms.Label();
             this.lblDDR1 = new System.Windows.Forms.Label();
             this.lblDDR2 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblAlmacenamiento1 = new System.Windows.Forms.Label();
+            this.lblAlmacenamiento2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -108,31 +109,42 @@ namespace info_tech
             this.lblDDR2.TabIndex = 7;
             this.lblDDR2.Text = "DDR:";
             // 
-            // label6
+            // lblAlmacenamiento1
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(129, 386);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 13);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "label6";
+            this.lblAlmacenamiento1.AutoSize = true;
+            this.lblAlmacenamiento1.Location = new System.Drawing.Point(129, 386);
+            this.lblAlmacenamiento1.Name = "lblAlmacenamiento1";
+            this.lblAlmacenamiento1.Size = new System.Drawing.Size(88, 13);
+            this.lblAlmacenamiento1.TabIndex = 8;
+            this.lblAlmacenamiento1.Text = "Almacenamiento:";
             // 
-            // label7
+            // lblAlmacenamiento2
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(626, 386);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(35, 13);
-            this.label7.TabIndex = 9;
-            this.label7.Text = "label7";
+            this.lblAlmacenamiento2.AutoSize = true;
+            this.lblAlmacenamiento2.Location = new System.Drawing.Point(626, 386);
+            this.lblAlmacenamiento2.Name = "lblAlmacenamiento2";
+            this.lblAlmacenamiento2.Size = new System.Drawing.Size(88, 13);
+            this.lblAlmacenamiento2.TabIndex = 9;
+            this.lblAlmacenamiento2.Text = "Almacenamiento:";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(996, 511);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(95, 40);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Atras";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // rams
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1604, 881);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.lblAlmacenamiento2);
+            this.Controls.Add(this.lblAlmacenamiento1);
             this.Controls.Add(this.lblDDR2);
             this.Controls.Add(this.lblDDR1);
             this.Controls.Add(this.lblFrecuencia2);
@@ -157,7 +169,8 @@ namespace info_tech
         private System.Windows.Forms.Label lblFrecuencia2;
         private System.Windows.Forms.Label lblDDR1;
         private System.Windows.Forms.Label lblDDR2;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblAlmacenamiento1;
+        private System.Windows.Forms.Label lblAlmacenamiento2;
+        private System.Windows.Forms.Button button1;
     }
 }

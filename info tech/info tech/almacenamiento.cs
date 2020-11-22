@@ -182,5 +182,11 @@ namespace info_tech
             }
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var newForm = new Form1();
+            newForm.Show();
+        }
     }
 }
