@@ -353,5 +353,11 @@ namespace info_tech
             Pulgadas();
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var newForm = new Form1();
+            newForm.Show();
+        }
     }   
 }
