@@ -60,7 +60,7 @@ namespace info_tech
             this.comboBox1.Items.AddRange(new object[] {
             "LG 24gl600f",
             "Viewsonic VX3276-4K-MHD"});
-            this.comboBox1.Location = new System.Drawing.Point(75, 190);
+            this.comboBox1.Location = new System.Drawing.Point(34, 190);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 1;
