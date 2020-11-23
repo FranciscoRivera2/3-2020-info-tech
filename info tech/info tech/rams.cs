@@ -187,7 +187,7 @@ namespace info_tech
             }
 
         }
-        private void Hercios()
+        private void Almacenamiento()
         {
             if (comboBox1.Text == "T-Force Vulcan Z")
             {
@@ -261,4 +261,16 @@ namespace info_tech
                 lblAlmacenamiento2.Text = "Almacenamiento:" + canAlmacenamiento;
             }
         }
-}
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Frecuencia();
+
+            DDR();
+
+            Almacenamiento();
+        }
+
+
+    }
+
+    }

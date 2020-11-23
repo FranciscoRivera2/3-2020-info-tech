@@ -182,6 +182,13 @@ namespace info_tech
             }
 
         }
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Tipo();
+
+            Almacenamiento();
+
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {

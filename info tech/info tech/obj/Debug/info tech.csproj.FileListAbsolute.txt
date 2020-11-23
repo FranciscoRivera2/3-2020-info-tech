@@ -16,3 +16,21 @@ C:\Users\Usuario\Documents\GitHub\3-2020-info-tech\info tech\info tech\bin\Debug
 C:\Users\Usuario\Documents\GitHub\3-2020-info-tech\info tech\info tech\bin\Debug\info tech.pdb
 C:\Users\Usuario\Documents\GitHub\3-2020-info-tech\info tech\info tech\obj\Debug\info tech.exe
 C:\Users\Usuario\Documents\GitHub\3-2020-info-tech\info tech\info tech\obj\Debug\info tech.pdb
+C:\Users\54911\Documents\GitHub\3-2020-info-tech\info tech\info tech\bin\Debug\info tech.exe.config
+C:\Users\54911\Documents\GitHub\3-2020-info-tech\info tech\info tech\bin\Debug\info tech.exe
+C:\Users\54911\Documents\GitHub\3-2020-info-tech\info tech\info tech\bin\Debug\info tech.pdb
+C:\Users\54911\Documents\GitHub\3-2020-info-tech\info tech\info tech\obj\Debug\info tech.csprojAssemblyReference.cache
+C:\Users\54911\Documents\GitHub\3-2020-info-tech\info tech\info tech\obj\Debug\info_tech.almacenamiento.resources
+C:\Users\54911\Documents\GitHub\3-2020-info-tech\info tech\info tech\obj\Debug\info_tech.Form1.resources
+C:\Users\54911\Documents\GitHub\3-2020-info-tech\info tech\info tech\obj\Debug\info_tech.fuente.resources
+C:\Users\54911\Documents\GitHub\3-2020-info-tech\info tech\info tech\obj\Debug\info_tech.gabinete.resources
+C:\Users\54911\Documents\GitHub\3-2020-info-tech\info tech\info tech\obj\Debug\info_tech.gpu.resources
+C:\Users\54911\Documents\GitHub\3-2020-info-tech\info tech\info tech\obj\Debug\info_tech.Form3.resources
+C:\Users\54911\Documents\GitHub\3-2020-info-tech\info tech\info tech\obj\Debug\info_tech.mother.resources
+C:\Users\54911\Documents\GitHub\3-2020-info-tech\info tech\info tech\obj\Debug\info_tech.procesadores.resources
+C:\Users\54911\Documents\GitHub\3-2020-info-tech\info tech\info tech\obj\Debug\info_tech.Properties.Resources.resources
+C:\Users\54911\Documents\GitHub\3-2020-info-tech\info tech\info tech\obj\Debug\info_tech.rams.resources
+C:\Users\54911\Documents\GitHub\3-2020-info-tech\info tech\info tech\obj\Debug\info tech.csproj.GenerateResource.cache
+C:\Users\54911\Documents\GitHub\3-2020-info-tech\info tech\info tech\obj\Debug\info tech.csproj.CoreCompileInputs.cache
+C:\Users\54911\Documents\GitHub\3-2020-info-tech\info tech\info tech\obj\Debug\info tech.exe
+C:\Users\54911\Documents\GitHub\3-2020-info-tech\info tech\info tech\obj\Debug\info tech.pdb

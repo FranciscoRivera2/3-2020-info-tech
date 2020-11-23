@@ -117,4 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label1.Text" xml:space="preserve">
+    <value>procesador (cpu)
+al comprar un procesador tenés que tener en cuenta principalmente las siguientes caracteriticas:
+socket: Éste tiene que ser compatible con la placa madre.
+Generación: Mientras más reciente sera mejor el rendimiento que tendrá.
+Línea: Existen 5 tanto por el lado de Intel como por el lado de Amd. La línea pentium y athlon que esta pensada para pc de escritorio, aunque puede correr juegos muy ligeros, la línea i3 y r3 que esta pensada para hacer pocas y sencillas tareas, la línea i5 y r5 que está pensada para poder hacer cualquier cosa al igual que los i7, r7, i9 y r9 la diferencia entre éstos es la frecuencia, hilos y núcleos.
+Modelo: Esta es la letra al final de la generación esta indica en el caso de intel, si tiene o no gpu integrada (F) y si se puede overclokear o no (K). En el caso de amd, si tiene o no gráficos integrados (G).
+hilos: Es la cantidad de subprocesos que puede manejar el procesador.
+nucleos: Es la cantidad de procesos que puede manejar el procesador.
+frecuencia: Es la velocidad normal a la que funcionara el procesador.
+frecuencia turbo: Es la velocidad Máxima a la que funcionara el procesador.
+cooler de stock: Este tiene que ser suficiente para que nuestro procesador no pase de los 80 grados nunca, de lo contrario tendrás que comprar uno mejor.
+cuello de botella: El procesador tiene que estar acorde a la tarjeta gráfica y no superarlo en rendimiento así el procesador no se ve limitada por la tarjeta gráfica.
+marca: La principal diferencia entre los procesadores de intel y amd es que los de intel son mejores en tareas mono núcleo es decir al hacer una tarea a la vez y amd es mejor en tareas multi núcleo es decir al hacer más de una tarea a la vez.</value>
+  </data>
 </root>

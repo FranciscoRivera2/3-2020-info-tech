@@ -117,4 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label1.Text" xml:space="preserve">
+    <value>targeta grafica (GPU)
+al comprar una targeta grafica tenes que tener en cuenta principalmente las siguientes caracteriticas.
+cuello de botella: La tarjeta grafica tiene que estar acorde a el procesador y no superarlo en rendimiento así la tarjeta grafica no se ve limitada por el procesador.
+modelo: El modelo esta relacionado con la potencia de esta, en la gama baja de nvidea están la 1650 y la 1650 Super, mientras que en amd la 570 y  la 580, en la gama media de nvidea se Encuentra la 1660, 1660 Super y la 1660 TI, mientras que en amd la 590, en la gama alta de nvidea se encuentra la 2060, 2060 Super, 2070, 2070 Super, 2080, 2080 Super, 2080 ti, 3070, 3080, 3090, mientras que en amd la vega 56, vega 64, 5500 XT, 5600, 5600 XT, 5700 y 5700 XT.
+puertos: Puede tener puertos VGA, hdmi y display port. los VGA son los que peor rendimiento tienen, los hdmi tienen mejor rendimiento que los VGA pero peor que los display port. Generalmente traen más de un puerto para poder conectar más de un monitor.
+vram: Es la memoria ram de la tarjeta grafica que se utiliza para almacenar texturas y modelos 3D.
+ddr: Esta determina el rendimiento de la vram mientras mayor sea el numero mejor será.</value>
+  </data>
 </root>
