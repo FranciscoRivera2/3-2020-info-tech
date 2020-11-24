@@ -161,6 +161,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="rams.resx">
       <DependentUpon>rams.cs</DependentUpon>
@@ -177,6 +178,54 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\almacenamiento1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\almacenamiento2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fuente1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fuente2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gabinete1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gabinete2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gpu1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gpu2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monitor1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monitor2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mother1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mother2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\procesador1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\procesador2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ram1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ram2.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

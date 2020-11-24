@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
+using info_tech.Properties;
 
 namespace info_tech
 {
@@ -26,6 +27,8 @@ namespace info_tech
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             Tipo();
+
+            Almacenamiento();
         }
         // creacion de un method 
         private void Tipo()
@@ -46,6 +49,8 @@ namespace info_tech
                 string canTipo = rd.GetString(0);
                 // aca abajo iria el label en donde se imprime el string previamente dicho
                 lblTipo1.Text = "Tipo:" + canTipo;
+                object imagen = Resources.ResourceManager.GetObject("almacenamiento1");
+                picalmacenamiento1.Image = (Image)imagen;
 
 
             }
@@ -65,6 +70,8 @@ namespace info_tech
                 string canTipo = rd.GetString(0);
                 // aca abajo iria el label en donde se imprime el string previamente dicho
                 lblTipo1.Text = "Tipo:" + canTipo;
+                object imagen = Resources.ResourceManager.GetObject("almacenamiento2");
+                picalmacenamiento1.Image = (Image)imagen;
 
 
             }
@@ -84,6 +91,8 @@ namespace info_tech
                 string canTipo = rd.GetString(0);
                 // aca abajo iria el label en donde se imprime el string previamente dicho
                 lblTipo2.Text = "Tipo:" + canTipo;
+                object imagen = Resources.ResourceManager.GetObject("almacenamiento1");
+                picalmacenamiento2.Image = (Image)imagen;
 
 
             }
@@ -103,6 +112,8 @@ namespace info_tech
                 string canTipo = rd.GetString(0);
                 // aca abajo iria el label en donde se imprime el string previamente dicho
                 lblTipo2.Text = "Tipo:" + canTipo;
+                object imagen = Resources.ResourceManager.GetObject("almacenamiento2");
+                picalmacenamiento2.Image = (Image)imagen;
 
 
             }
@@ -192,8 +203,12 @@ namespace info_tech
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var newForm = new Form1();
-            newForm.Show();
+            this.Close();
+        }
+
+        private void lblAlmacenamiento2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

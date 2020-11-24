@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
+using info_tech.Properties;
 
 namespace info_tech
 {
@@ -31,6 +32,8 @@ namespace info_tech
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             Certificación();
+
+            puertos();
         }
         // creacion de un method 
         private void Certificación()
@@ -51,7 +54,8 @@ namespace info_tech
                 string canCertificación = rd.GetString(0);
                 // aca abajo iria el label en donde se imprime el string previamente dicho
                 lblCertificación1.Text = "Certificación:" + canCertificación;
-
+                object imagen = Resources.ResourceManager.GetObject("fuente1");
+                picfuente1.Image = (Image)imagen;
 
             }
             else if (comboBox1.Text == "Cooler Master MWE")
@@ -70,6 +74,8 @@ namespace info_tech
                 string canCertificación = rd.GetString(0);
                 // aca abajo iria el label en donde se imprime el string previamente dicho
                 lblCertificación1.Text = "Certificación:" + canCertificación;
+                object imagen = Resources.ResourceManager.GetObject("fuente2");
+                picfuente1.Image = (Image)imagen;
 
 
             }
@@ -89,6 +95,8 @@ namespace info_tech
                 string canCertificación = rd.GetString(0);
                 // aca abajo iria el label en donde se imprime el string previamente dicho
                 lblCertificación2.Text = "Certificación:" + canCertificación;
+                object imagen = Resources.ResourceManager.GetObject("fuente1");
+                picfuente2.Image = (Image)imagen;
 
 
             }
@@ -108,6 +116,8 @@ namespace info_tech
                 string canCertificación = rd.GetString(0);
                 // aca abajo iria el label en donde se imprime el string previamente dicho
                 lblCertificación2.Text = "Certificación:" + canCertificación;
+                object imagen = Resources.ResourceManager.GetObject("fuente2");
+                picfuente2.Image = (Image)imagen;
 
 
             }
@@ -131,6 +141,7 @@ namespace info_tech
                 string canWatts = rd.GetString(0);
                 // aca abajo iria el label en donde se imprime el string previamente dicho
                 lblWatts1.Text = "Watts:" + canWatts;
+
 
             }
             else if (comboBox1.Text == "Cooler Master MWE")
@@ -197,8 +208,7 @@ namespace info_tech
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var newForm = new Form1();
-            newForm.Show();
+            this.Close();
         }
     }
 }

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
+using info_tech.Properties;
 
 namespace info_tech
 {
@@ -25,13 +26,16 @@ namespace info_tech
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var newForm = new Form1();
-            newForm.Show();
+            this.Close();
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             Gama();
+
+            Vram();
+
+            DDR();
         }
         // creacion de un method 
         private void Gama()
@@ -52,6 +56,8 @@ namespace info_tech
                 string canGama = rd.GetString(0);
                 // aca abajo iria el label en donde se imprime el string previamente dicho
                 lblGama1.Text = "Gama:" + canGama;
+                object imagen = Resources.ResourceManager.GetObject("gpu1");
+                picgpu1.Image = (Image)imagen;
 
 
             }
@@ -71,6 +77,8 @@ namespace info_tech
                 string canGama = rd.GetString(0);
                 // aca abajo iria el label en donde se imprime el string previamente dicho
                 lblGama1.Text = "Gama:" + canGama;
+                object imagen = Resources.ResourceManager.GetObject("gpu2");
+                picgpu1.Image = (Image)imagen;
 
 
             }
@@ -90,6 +98,8 @@ namespace info_tech
                 string canGama = rd.GetString(0);
                 // aca abajo iria el label en donde se imprime el string previamente dicho
                 lblGama2.Text = "Gama:" + canGama;
+                object imagen = Resources.ResourceManager.GetObject("gpu1");
+                picgpu2.Image = (Image)imagen;
 
 
             }
@@ -109,6 +119,8 @@ namespace info_tech
                 string canGama = rd.GetString(0);
                 // aca abajo iria el label en donde se imprime el string previamente dicho
                 lblGama2.Text = "Gama:" + canGama;
+                object imagen = Resources.ResourceManager.GetObject("gpu2");
+                picgpu2.Image = (Image)imagen;
 
 
             }

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
+using info_tech.Properties;
 
 namespace info_tech
 {
@@ -20,8 +21,7 @@ namespace info_tech
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var newForm = new Form1();
-            newForm.Show();
+            this.Close();
         }
 
         private void procesadores_Load(object sender, EventArgs e)
@@ -31,6 +31,12 @@ namespace info_tech
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             Generación();
+
+            FrecuenciaTurbo();
+
+            Hilos();
+
+            Nucleos();
         }
         // creacion de un method 
         private void Generación()
@@ -51,6 +57,8 @@ namespace info_tech
                 string canGeneración = rd.GetString(0);
                 // aca abajo iria el label en donde se imprime el string previamente dicho
                 lblGeneración1.Text = "Generación:" + canGeneración;
+                object imagen = Resources.ResourceManager.GetObject("procesador1");
+                picproce1.Image = (Image)imagen;
 
 
             }
@@ -70,6 +78,8 @@ namespace info_tech
                 string canGeneración = rd.GetString(0);
                 // aca abajo iria el label en donde se imprime el string previamente dicho
                 lblGeneración1.Text = "Generación:" + canGeneración;
+                object imagen = Resources.ResourceManager.GetObject("procesador2");
+                picproce1.Image = (Image)imagen;
 
 
             }
@@ -89,6 +99,8 @@ namespace info_tech
                 string canGeneración = rd.GetString(0);
                 // aca abajo iria el label en donde se imprime el string previamente dicho
                 lblGeneración2.Text = "Generación:" + canGeneración;
+                object imagen = Resources.ResourceManager.GetObject("procesador1");
+                picproce2.Image = (Image)imagen;
 
 
             }
@@ -108,6 +120,8 @@ namespace info_tech
                 string canGeneración = rd.GetString(0);
                 // aca abajo iria el label en donde se imprime el string previamente dicho
                 lblGeneración2.Text = "Generación:" + canGeneración;
+                object imagen = Resources.ResourceManager.GetObject("procesador2");
+                picproce2.Image = (Image)imagen;
 
 
             }
@@ -121,7 +135,7 @@ namespace info_tech
                 //abrimos coneccion
                 con.Open();
                 // comando de lo que va a ser "SELECT nombre de campo FROM nombre de entidad WHERE Id = ...", con
-                OleDbCommand cmd = new OleDbCommand("SELECT Frecuencia Turbo FROM procesador1 WHERE Id = 1", con);
+                OleDbCommand cmd = new OleDbCommand("SELECT FrecuenciaTurbo FROM procesador1 WHERE Id = 1", con);
                 //lee lo que ejecuto el cmd
                 OleDbDataReader rd = cmd.ExecuteReader();
                 rd.Read();
@@ -131,6 +145,7 @@ namespace info_tech
                 // aca abajo iria el label en donde se imprime el string previamente dicho
                 lblFrecuenciaTurbo1.Text = "Frecuencia Turbo:" + canFrecuenciaTurbo;
 
+
             }
             else if (comboBox1.Text == "Ryzen R3")
             {
@@ -139,7 +154,7 @@ namespace info_tech
                 //abrimos coneccion
                 con.Open();
                 // comando de lo que va a ser "SELECT nombre de campo FROM nombre de entidad WHERE Id = ...", con
-                OleDbCommand cmd = new OleDbCommand("SELECT Frecuencia Turbo FROM procesador1 WHERE Id = 2", con);
+                OleDbCommand cmd = new OleDbCommand("SELECT FrecuenciaTurbo FROM procesador1 WHERE Id = 2", con);
                 //lee lo que ejecuto el cmd
                 OleDbDataReader rd = cmd.ExecuteReader();
                 rd.Read();
@@ -148,6 +163,8 @@ namespace info_tech
                 string canFrecuenciaTurbo = rd.GetString(0);
                 // aca abajo iria el label en donde se imprime el string previamente dicho
                 lblFrecuenciaTurbo1.Text = "Frecuencia Turbo:" + canFrecuenciaTurbo;
+
+
             }
             if (comboBox2.Text == "intel i3")
             {
@@ -156,7 +173,7 @@ namespace info_tech
                 //abrimos coneccion
                 con.Open();
                 // comando de lo que va a ser "SELECT nombre de campo FROM nombre de entidad WHERE Id = ...", con
-                OleDbCommand cmd = new OleDbCommand("SELECT Frecuencia Turbo FROM procesador1 WHERE Id = 1", con);
+                OleDbCommand cmd = new OleDbCommand("SELECT FrecuenciaTurbo FROM procesador1 WHERE Id = 1", con);
                 //lee lo que ejecuto el cmd
                 OleDbDataReader rd = cmd.ExecuteReader();
                 rd.Read();
@@ -175,7 +192,7 @@ namespace info_tech
                 //abrimos coneccion
                 con.Open();
                 // comando de lo que va a ser "SELECT nombre de campo FROM nombre de entidad WHERE Id = ...", con
-                OleDbCommand cmd = new OleDbCommand("SELECT Frecuencia Turbo FROM procesador1 WHERE Id = 2", con);
+                OleDbCommand cmd = new OleDbCommand("SELECT FrecuenciaTurbo FROM procesador1 WHERE Id = 2", con);
                 //lee lo que ejecuto el cmd
                 OleDbDataReader rd = cmd.ExecuteReader();
                 rd.Read();
@@ -184,9 +201,11 @@ namespace info_tech
                 string canFrecuenciaTurbo = rd.GetString(0);
                 // aca abajo iria el label en donde se imprime el string previamente dicho
                 lblFrecuenciaTurbo2.Text = "Frecuencia Turbo:" + canFrecuenciaTurbo;
-            }
 
+
+            }
         }
+
         private void Hilos()
         {
             if (comboBox1.Text == "intel i3")
@@ -346,6 +365,11 @@ namespace info_tech
             Hilos();
 
             Nucleos();
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
 
         }
     }

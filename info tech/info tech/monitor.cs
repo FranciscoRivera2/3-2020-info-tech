@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
+using info_tech.Properties;
 
 namespace info_tech
 {
@@ -36,6 +37,9 @@ namespace info_tech
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             Panel();
+            Resolución();
+            Hercios();
+            Pulgadas();
         }
         // creacion de un method 
         private void Panel()
@@ -56,6 +60,8 @@ namespace info_tech
                 string canPanel = rd.GetString(0);
                 // aca abajo iria el label en donde se imprime el string previamente dicho
                 lblPanel1.Text = "Panel:" + canPanel;
+                object imagen = Resources.ResourceManager.GetObject("monitor1");
+                picmonitor1.Image = (Image)imagen;
 
 
             }
@@ -75,6 +81,8 @@ namespace info_tech
                 string canPanel = rd.GetString(0);
                 // aca abajo iria el label en donde se imprime el string previamente dicho
                 lblPanel1.Text = "Panel:" + canPanel;
+                object imagen = Resources.ResourceManager.GetObject("monitor2");
+                picmonitor1.Image = (Image)imagen;
 
 
             }
@@ -94,6 +102,8 @@ namespace info_tech
                 string canPanel = rd.GetString(0);
                 // aca abajo iria el label en donde se imprime el string previamente dicho
                 lblPanel2.Text = "Panel:" + canPanel;
+                object imagen = Resources.ResourceManager.GetObject("monitor1");
+                picmonitor2.Image = (Image)imagen;
 
 
             }
@@ -113,6 +123,8 @@ namespace info_tech
                 string canPanel = rd.GetString(0);
                 // aca abajo iria el label en donde se imprime el string previamente dicho
                 lblPanel2.Text = "Panel:" + canPanel;
+                object imagen = Resources.ResourceManager.GetObject("monitor2");
+                picmonitor2.Image = (Image)imagen;
 
 
             }
@@ -352,12 +364,12 @@ namespace info_tech
 
             Pulgadas();
 
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var newForm = new Form1();
-            newForm.Show();
+            this.Close();
         }
     }   
 }

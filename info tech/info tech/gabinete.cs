@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
+using info_tech.Properties;
+
 namespace info_tech
 {
     public partial class gabinete : Form
@@ -51,6 +53,8 @@ namespace info_tech
                 string canPuertos = rd.GetString(0);
                 // aca abajo iria el label en donde se imprime el string previamente dicho
                 lblPuertos1.Text = "Puertos:" + canPuertos;
+                object imagen = Resources.ResourceManager.GetObject("gabinete1");
+                picgabinete1.Image = (Image)imagen;
 
 
             }
@@ -70,6 +74,8 @@ namespace info_tech
                 string canPuertos = rd.GetString(0);
                 // aca abajo iria el label en donde se imprime el string previamente dicho
                 lblPuertos1.Text = "Puertos:" + canPuertos;
+                object imagen = Resources.ResourceManager.GetObject("gabinete2");
+                picgabinete1.Image = (Image)imagen;
 
 
             }
@@ -80,7 +86,7 @@ namespace info_tech
                 //abrimos coneccion
                 con.Open();
                 // comando de lo que va a ser "SELECT nombre de campo FROM nombre de entidad WHERE Id = ...", con
-                OleDbCommand cmd = new OleDbCommand("SELECT Puertos FROM gabinete WHERE Id = 1", con);
+                OleDbCommand cmd = new OleDbCommand("SELECT Puertos FROM gabinete1 WHERE Id = 1", con);
                 //lee lo que ejecuto el cmd
                 OleDbDataReader rd = cmd.ExecuteReader();
                 rd.Read();
@@ -89,6 +95,8 @@ namespace info_tech
                 string canPuertos = rd.GetString(0);
                 // aca abajo iria el label en donde se imprime el string previamente dicho
                 lblPuertos2.Text = "Puertos:" + canPuertos;
+                object imagen = Resources.ResourceManager.GetObject("gabinete1");
+                picgabinete2.Image = (Image)imagen;
 
 
             }
@@ -99,7 +107,7 @@ namespace info_tech
                 //abrimos coneccion
                 con.Open();
                 // comando de lo que va a ser "SELECT nombre de campo FROM nombre de entidad WHERE Id = ...", con
-                OleDbCommand cmd = new OleDbCommand("SELECT Puertos FROM gabinete WHERE Id = 2", con);
+                OleDbCommand cmd = new OleDbCommand("SELECT Puertos FROM gabinete1 WHERE Id = 2", con);
                 //lee lo que ejecuto el cmd
                 OleDbDataReader rd = cmd.ExecuteReader();
                 rd.Read();
@@ -108,6 +116,8 @@ namespace info_tech
                 string canPuertos = rd.GetString(0);
                 // aca abajo iria el label en donde se imprime el string previamente dicho
                 lblPuertos2.Text = "Puertos:" + canPuertos;
+                object imagen = Resources.ResourceManager.GetObject("gabinete2");
+                picgabinete2.Image = (Image)imagen;
 
 
             }
@@ -121,8 +131,7 @@ namespace info_tech
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var newForm = new Form1();
-            newForm.Show();
+            this.Close();
         }
     }
 }

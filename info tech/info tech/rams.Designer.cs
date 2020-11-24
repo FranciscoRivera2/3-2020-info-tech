@@ -40,16 +40,24 @@ namespace info_tech
             this.lblAlmacenamiento1 = new System.Windows.Forms.Label();
             this.lblAlmacenamiento2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.picram1 = new System.Windows.Forms.PictureBox();
+            this.picram2 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picram1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picram2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 40);
+            this.label1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label1.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(12, 182);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(993, 78);
+            this.label1.Size = new System.Drawing.Size(688, 252);
             this.label1.TabIndex = 0;
             this.label1.Text = resources.GetString("label1.Text");
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // comboBox1
             // 
@@ -57,15 +65,16 @@ namespace info_tech
             this.comboBox1.Items.AddRange(new object[] {
             "T-Force Vulcan Z",
             "Adata Value"});
-            this.comboBox1.Location = new System.Drawing.Point(132, 214);
+            this.comboBox1.Location = new System.Drawing.Point(59, 454);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.Size = new System.Drawing.Size(172, 21);
             this.comboBox1.TabIndex = 1;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // lblFrecuencia1
             // 
             this.lblFrecuencia1.AutoSize = true;
-            this.lblFrecuencia1.Location = new System.Drawing.Point(132, 312);
+            this.lblFrecuencia1.Location = new System.Drawing.Point(56, 546);
             this.lblFrecuencia1.Name = "lblFrecuencia1";
             this.lblFrecuencia1.Size = new System.Drawing.Size(63, 13);
             this.lblFrecuencia1.TabIndex = 3;
@@ -77,15 +86,16 @@ namespace info_tech
             this.comboBox2.Items.AddRange(new object[] {
             "T-Force Vulcan Z",
             "Adata Value"});
-            this.comboBox2.Location = new System.Drawing.Point(629, 214);
+            this.comboBox2.Location = new System.Drawing.Point(527, 454);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
+            this.comboBox2.Size = new System.Drawing.Size(164, 21);
             this.comboBox2.TabIndex = 4;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // lblFrecuencia2
             // 
             this.lblFrecuencia2.AutoSize = true;
-            this.lblFrecuencia2.Location = new System.Drawing.Point(626, 312);
+            this.lblFrecuencia2.Location = new System.Drawing.Point(524, 546);
             this.lblFrecuencia2.Name = "lblFrecuencia2";
             this.lblFrecuencia2.Size = new System.Drawing.Size(63, 13);
             this.lblFrecuencia2.TabIndex = 5;
@@ -94,7 +104,7 @@ namespace info_tech
             // lblDDR1
             // 
             this.lblDDR1.AutoSize = true;
-            this.lblDDR1.Location = new System.Drawing.Point(129, 348);
+            this.lblDDR1.Location = new System.Drawing.Point(56, 582);
             this.lblDDR1.Name = "lblDDR1";
             this.lblDDR1.Size = new System.Drawing.Size(34, 13);
             this.lblDDR1.TabIndex = 6;
@@ -103,7 +113,7 @@ namespace info_tech
             // lblDDR2
             // 
             this.lblDDR2.AutoSize = true;
-            this.lblDDR2.Location = new System.Drawing.Point(626, 348);
+            this.lblDDR2.Location = new System.Drawing.Point(524, 582);
             this.lblDDR2.Name = "lblDDR2";
             this.lblDDR2.Size = new System.Drawing.Size(34, 13);
             this.lblDDR2.TabIndex = 7;
@@ -112,7 +122,7 @@ namespace info_tech
             // lblAlmacenamiento1
             // 
             this.lblAlmacenamiento1.AutoSize = true;
-            this.lblAlmacenamiento1.Location = new System.Drawing.Point(129, 386);
+            this.lblAlmacenamiento1.Location = new System.Drawing.Point(56, 620);
             this.lblAlmacenamiento1.Name = "lblAlmacenamiento1";
             this.lblAlmacenamiento1.Size = new System.Drawing.Size(88, 13);
             this.lblAlmacenamiento1.TabIndex = 8;
@@ -121,7 +131,7 @@ namespace info_tech
             // lblAlmacenamiento2
             // 
             this.lblAlmacenamiento2.AutoSize = true;
-            this.lblAlmacenamiento2.Location = new System.Drawing.Point(626, 386);
+            this.lblAlmacenamiento2.Location = new System.Drawing.Point(524, 620);
             this.lblAlmacenamiento2.Name = "lblAlmacenamiento2";
             this.lblAlmacenamiento2.Size = new System.Drawing.Size(88, 13);
             this.lblAlmacenamiento2.TabIndex = 9;
@@ -129,7 +139,7 @@ namespace info_tech
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(996, 511);
+            this.button1.Location = new System.Drawing.Point(-5, -1);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(95, 40);
             this.button1.TabIndex = 10;
@@ -137,11 +147,32 @@ namespace info_tech
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // picram1
+            // 
+            this.picram1.Location = new System.Drawing.Point(59, 481);
+            this.picram1.Name = "picram1";
+            this.picram1.Size = new System.Drawing.Size(100, 50);
+            this.picram1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picram1.TabIndex = 11;
+            this.picram1.TabStop = false;
+            // 
+            // picram2
+            // 
+            this.picram2.Location = new System.Drawing.Point(527, 481);
+            this.picram2.Name = "picram2";
+            this.picram2.Size = new System.Drawing.Size(100, 50);
+            this.picram2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picram2.TabIndex = 12;
+            this.picram2.TabStop = false;
+            // 
             // rams
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1604, 881);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(1064, 681);
+            this.Controls.Add(this.picram2);
+            this.Controls.Add(this.picram1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lblAlmacenamiento2);
             this.Controls.Add(this.lblAlmacenamiento1);
@@ -155,6 +186,8 @@ namespace info_tech
             this.Name = "rams";
             this.Text = "Form3";
             this.Load += new System.EventHandler(this.rams_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.picram1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picram2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -172,5 +205,7 @@ namespace info_tech
         private System.Windows.Forms.Label lblAlmacenamiento1;
         private System.Windows.Forms.Label lblAlmacenamiento2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox picram1;
+        private System.Windows.Forms.PictureBox picram2;
     }
 }

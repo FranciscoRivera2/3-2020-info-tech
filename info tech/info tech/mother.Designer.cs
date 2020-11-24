@@ -38,15 +38,22 @@ namespace info_tech
             this.lblPuertos1 = new System.Windows.Forms.Label();
             this.lblPuertos2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.picmother1 = new System.Windows.Forms.PictureBox();
+            this.picmother2 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picmother1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picmother2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 85);
+            this.label1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label1.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(13, 176);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1312, 320);
+            this.label1.Size = new System.Drawing.Size(906, 315);
             this.label1.TabIndex = 0;
             this.label1.Text = resources.GetString("label1.Text");
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -57,9 +64,9 @@ namespace info_tech
             this.comboBox1.Items.AddRange(new object[] {
             "Gigabyte Z390 M",
             "ASUS PRIME B460M-A"});
-            this.comboBox1.Location = new System.Drawing.Point(22, 472);
+            this.comboBox1.Location = new System.Drawing.Point(42, 526);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 28);
+            this.comboBox1.Size = new System.Drawing.Size(184, 28);
             this.comboBox1.TabIndex = 1;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -69,16 +76,16 @@ namespace info_tech
             this.comboBox2.Items.AddRange(new object[] {
             "Gigabyte Z390 M",
             "ASUS PRIME B460M-A"});
-            this.comboBox2.Location = new System.Drawing.Point(975, 472);
+            this.comboBox2.Location = new System.Drawing.Point(527, 526);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 28);
+            this.comboBox2.Size = new System.Drawing.Size(179, 28);
             this.comboBox2.TabIndex = 2;
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // lblModulos1
             // 
             this.lblModulos1.AutoSize = true;
-            this.lblModulos1.Location = new System.Drawing.Point(18, 532);
+            this.lblModulos1.Location = new System.Drawing.Point(38, 623);
             this.lblModulos1.Name = "lblModulos1";
             this.lblModulos1.Size = new System.Drawing.Size(73, 20);
             this.lblModulos1.TabIndex = 3;
@@ -88,7 +95,7 @@ namespace info_tech
             // lblModulos2
             // 
             this.lblModulos2.AutoSize = true;
-            this.lblModulos2.Location = new System.Drawing.Point(971, 532);
+            this.lblModulos2.Location = new System.Drawing.Point(533, 623);
             this.lblModulos2.Name = "lblModulos2";
             this.lblModulos2.Size = new System.Drawing.Size(73, 20);
             this.lblModulos2.TabIndex = 4;
@@ -97,7 +104,7 @@ namespace info_tech
             // lblPuertos1
             // 
             this.lblPuertos1.AutoSize = true;
-            this.lblPuertos1.Location = new System.Drawing.Point(18, 584);
+            this.lblPuertos1.Location = new System.Drawing.Point(38, 652);
             this.lblPuertos1.Name = "lblPuertos1";
             this.lblPuertos1.Size = new System.Drawing.Size(68, 20);
             this.lblPuertos1.TabIndex = 5;
@@ -106,7 +113,7 @@ namespace info_tech
             // lblPuertos2
             // 
             this.lblPuertos2.AutoSize = true;
-            this.lblPuertos2.Location = new System.Drawing.Point(977, 584);
+            this.lblPuertos2.Location = new System.Drawing.Point(533, 652);
             this.lblPuertos2.Name = "lblPuertos2";
             this.lblPuertos2.Size = new System.Drawing.Size(68, 20);
             this.lblPuertos2.TabIndex = 6;
@@ -114,7 +121,7 @@ namespace info_tech
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1230, 708);
+            this.button1.Location = new System.Drawing.Point(1, 1);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(95, 40);
             this.button1.TabIndex = 8;
@@ -122,11 +129,32 @@ namespace info_tech
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // picmother1
+            // 
+            this.picmother1.Location = new System.Drawing.Point(42, 570);
+            this.picmother1.Name = "picmother1";
+            this.picmother1.Size = new System.Drawing.Size(100, 50);
+            this.picmother1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picmother1.TabIndex = 9;
+            this.picmother1.TabStop = false;
+            // 
+            // picmother2
+            // 
+            this.picmother2.Location = new System.Drawing.Point(527, 570);
+            this.picmother2.Name = "picmother2";
+            this.picmother2.Size = new System.Drawing.Size(100, 50);
+            this.picmother2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picmother2.TabIndex = 10;
+            this.picmother2.TabStop = false;
+            // 
             // mother
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1604, 881);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(1064, 681);
+            this.Controls.Add(this.picmother2);
+            this.Controls.Add(this.picmother1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lblPuertos2);
             this.Controls.Add(this.lblPuertos1);
@@ -140,6 +168,8 @@ namespace info_tech
             this.Name = "mother";
             this.Text = "Form3";
             this.Load += new System.EventHandler(this.mother_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.picmother1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picmother2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -155,5 +185,7 @@ namespace info_tech
         private System.Windows.Forms.Label lblPuertos1;
         private System.Windows.Forms.Label lblPuertos2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox picmother1;
+        private System.Windows.Forms.PictureBox picmother2;
     }
 }

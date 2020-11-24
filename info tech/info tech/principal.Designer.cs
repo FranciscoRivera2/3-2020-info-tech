@@ -29,6 +29,7 @@ namespace info_tech
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -41,81 +42,81 @@ namespace info_tech
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(111, 75);
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(109, 346);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(95, 40);
+            this.button1.Size = new System.Drawing.Size(209, 60);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Almacenamiento";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(111, 121);
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.Location = new System.Drawing.Point(765, 591);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(95, 40);
+            this.button2.Size = new System.Drawing.Size(208, 61);
             this.button2.TabIndex = 1;
-            this.button2.Text = "Memoria RAM";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(111, 167);
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.Location = new System.Drawing.Point(113, 215);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(95, 40);
+            this.button3.Size = new System.Drawing.Size(205, 65);
             this.button3.TabIndex = 2;
-            this.button3.Text = "GPU";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(111, 213);
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
+            this.button4.Location = new System.Drawing.Point(765, 346);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(95, 40);
+            this.button4.Size = new System.Drawing.Size(207, 60);
             this.button4.TabIndex = 3;
-            this.button4.Text = "Procesadores";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(111, 259);
+            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
+            this.button5.Location = new System.Drawing.Point(109, 474);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(95, 40);
+            this.button5.Size = new System.Drawing.Size(207, 61);
             this.button5.TabIndex = 4;
-            this.button5.Text = "Fuente";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(111, 305);
+            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
+            this.button6.Location = new System.Drawing.Point(765, 469);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(95, 40);
+            this.button6.Size = new System.Drawing.Size(208, 66);
             this.button6.TabIndex = 5;
-            this.button6.Text = "Gabinete";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(111, 351);
+            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
+            this.button7.Location = new System.Drawing.Point(765, 215);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(95, 40);
+            this.button7.Size = new System.Drawing.Size(207, 65);
             this.button7.TabIndex = 6;
-            this.button7.Text = "Monitor";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(111, 397);
+            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
+            this.button8.Location = new System.Drawing.Point(109, 588);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(95, 40);
+            this.button8.Size = new System.Drawing.Size(209, 64);
             this.button8.TabIndex = 7;
-            this.button8.Text = "Mother";
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
@@ -123,7 +124,8 @@ namespace info_tech
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1604, 881);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(1064, 681);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);

@@ -42,15 +42,21 @@ namespace info_tech
             this.lblPulgadas1 = new System.Windows.Forms.Label();
             this.lblPulgadas2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.picmonitor1 = new System.Windows.Forms.PictureBox();
+            this.picmonitor2 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picmonitor1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picmonitor2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 23);
+            this.label1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label1.Font = new System.Drawing.Font("Dubai", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(12, 173);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1168, 108);
+            this.label1.Size = new System.Drawing.Size(790, 315);
             this.label1.TabIndex = 0;
             this.label1.Text = resources.GetString("label1.Text");
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -61,9 +67,9 @@ namespace info_tech
             this.comboBox1.Items.AddRange(new object[] {
             "LG 24gl600f",
             "Viewsonic VX3276-4K-MHD"});
-            this.comboBox1.Location = new System.Drawing.Point(34, 190);
+            this.comboBox1.Location = new System.Drawing.Point(30, 491);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.Size = new System.Drawing.Size(139, 21);
             this.comboBox1.TabIndex = 1;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -73,15 +79,16 @@ namespace info_tech
             this.comboBox2.Items.AddRange(new object[] {
             "LG 24gl600f",
             "Viewsonic VX3276-4K-MHD"});
-            this.comboBox2.Location = new System.Drawing.Point(340, 190);
+            this.comboBox2.Location = new System.Drawing.Point(347, 491);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
+            this.comboBox2.Size = new System.Drawing.Size(143, 21);
             this.comboBox2.TabIndex = 2;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // lblPanel1
             // 
             this.lblPanel1.AutoSize = true;
-            this.lblPanel1.Location = new System.Drawing.Point(58, 284);
+            this.lblPanel1.Location = new System.Drawing.Point(27, 584);
             this.lblPanel1.Name = "lblPanel1";
             this.lblPanel1.Size = new System.Drawing.Size(37, 13);
             this.lblPanel1.TabIndex = 3;
@@ -90,7 +97,7 @@ namespace info_tech
             // lblPanel2
             // 
             this.lblPanel2.AutoSize = true;
-            this.lblPanel2.Location = new System.Drawing.Point(378, 284);
+            this.lblPanel2.Location = new System.Drawing.Point(344, 584);
             this.lblPanel2.Name = "lblPanel2";
             this.lblPanel2.Size = new System.Drawing.Size(37, 13);
             this.lblPanel2.TabIndex = 4;
@@ -99,7 +106,7 @@ namespace info_tech
             // lblResolución1
             // 
             this.lblResolución1.AutoSize = true;
-            this.lblResolución1.Location = new System.Drawing.Point(49, 322);
+            this.lblResolución1.Location = new System.Drawing.Point(27, 610);
             this.lblResolución1.Name = "lblResolución1";
             this.lblResolución1.Size = new System.Drawing.Size(63, 13);
             this.lblResolución1.TabIndex = 5;
@@ -109,7 +116,7 @@ namespace info_tech
             // lblResolución2
             // 
             this.lblResolución2.AutoSize = true;
-            this.lblResolución2.Location = new System.Drawing.Point(378, 333);
+            this.lblResolución2.Location = new System.Drawing.Point(344, 610);
             this.lblResolución2.Name = "lblResolución2";
             this.lblResolución2.Size = new System.Drawing.Size(63, 13);
             this.lblResolución2.TabIndex = 6;
@@ -118,7 +125,7 @@ namespace info_tech
             // lblHercios1
             // 
             this.lblHercios1.AutoSize = true;
-            this.lblHercios1.Location = new System.Drawing.Point(49, 360);
+            this.lblHercios1.Location = new System.Drawing.Point(27, 632);
             this.lblHercios1.Name = "lblHercios1";
             this.lblHercios1.Size = new System.Drawing.Size(46, 13);
             this.lblHercios1.TabIndex = 7;
@@ -127,7 +134,7 @@ namespace info_tech
             // lblHercios2
             // 
             this.lblHercios2.AutoSize = true;
-            this.lblHercios2.Location = new System.Drawing.Point(378, 373);
+            this.lblHercios2.Location = new System.Drawing.Point(344, 632);
             this.lblHercios2.Name = "lblHercios2";
             this.lblHercios2.Size = new System.Drawing.Size(46, 13);
             this.lblHercios2.TabIndex = 8;
@@ -136,7 +143,7 @@ namespace info_tech
             // lblPulgadas1
             // 
             this.lblPulgadas1.AutoSize = true;
-            this.lblPulgadas1.Location = new System.Drawing.Point(49, 393);
+            this.lblPulgadas1.Location = new System.Drawing.Point(27, 659);
             this.lblPulgadas1.Name = "lblPulgadas1";
             this.lblPulgadas1.Size = new System.Drawing.Size(54, 13);
             this.lblPulgadas1.TabIndex = 9;
@@ -145,7 +152,7 @@ namespace info_tech
             // lblPulgadas2
             // 
             this.lblPulgadas2.AutoSize = true;
-            this.lblPulgadas2.Location = new System.Drawing.Point(378, 408);
+            this.lblPulgadas2.Location = new System.Drawing.Point(344, 659);
             this.lblPulgadas2.Name = "lblPulgadas2";
             this.lblPulgadas2.Size = new System.Drawing.Size(54, 13);
             this.lblPulgadas2.TabIndex = 10;
@@ -153,7 +160,7 @@ namespace info_tech
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(788, 447);
+            this.button1.Location = new System.Drawing.Point(-5, 0);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(95, 40);
             this.button1.TabIndex = 11;
@@ -161,11 +168,32 @@ namespace info_tech
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // picmonitor1
+            // 
+            this.picmonitor1.Location = new System.Drawing.Point(30, 518);
+            this.picmonitor1.Name = "picmonitor1";
+            this.picmonitor1.Size = new System.Drawing.Size(100, 50);
+            this.picmonitor1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picmonitor1.TabIndex = 12;
+            this.picmonitor1.TabStop = false;
+            // 
+            // picmonitor2
+            // 
+            this.picmonitor2.Location = new System.Drawing.Point(347, 518);
+            this.picmonitor2.Name = "picmonitor2";
+            this.picmonitor2.Size = new System.Drawing.Size(100, 50);
+            this.picmonitor2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picmonitor2.TabIndex = 13;
+            this.picmonitor2.TabStop = false;
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1604, 881);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(1064, 681);
+            this.Controls.Add(this.picmonitor2);
+            this.Controls.Add(this.picmonitor1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lblPulgadas2);
             this.Controls.Add(this.lblPulgadas1);
@@ -181,6 +209,8 @@ namespace info_tech
             this.Name = "Form3";
             this.Text = "Form3";
             this.Load += new System.EventHandler(this.Form3_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.picmonitor1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picmonitor2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -200,5 +230,7 @@ namespace info_tech
         private System.Windows.Forms.Label lblPulgadas1;
         private System.Windows.Forms.Label lblPulgadas2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox picmonitor1;
+        private System.Windows.Forms.PictureBox picmonitor2;
     }
 }

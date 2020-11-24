@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
+using info_tech.Properties;
 
 namespace info_tech
 {
@@ -31,6 +32,8 @@ namespace info_tech
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             Modulos();
+
+            Puertos();
         }
         // creacion de un method 
         private void Modulos()
@@ -51,10 +54,12 @@ namespace info_tech
                 string canModulos = rd.GetString(0);
                 // aca abajo iria el label en donde se imprime el string previamente dicho
                 lblModulos1.Text = "Modulos:" + canModulos;
+                object imagen = Resources.ResourceManager.GetObject("mother1");
+                picmother1.Image = (Image)imagen;
 
 
             }
-            else if (comboBox1.Text == "ASUS PRIME B460M - A")
+            else if (comboBox1.Text == "ASUS PRIME B460M-A")
             {
                 //coneccion con la basedata
                 OleDbConnection con = new OleDbConnection(@"Provider = Microsoft.ACE.OLEDB.12.0; Data Source = nuevainfotech.accdb");
@@ -70,6 +75,8 @@ namespace info_tech
                 string canModulos = rd.GetString(0);
                 // aca abajo iria el label en donde se imprime el string previamente dicho
                 lblModulos1.Text = "Modulos:" + canModulos;
+                object imagen = Resources.ResourceManager.GetObject("mother2");
+                picmother1.Image = (Image)imagen;
 
 
             }
@@ -89,10 +96,13 @@ namespace info_tech
                 string canModulos = rd.GetString(0);
                 // aca abajo iria el label en donde se imprime el string previamente dicho
                 lblModulos2.Text = "Modulos:" + canModulos;
+                object imagen = Resources.ResourceManager.GetObject("mother1");
+                picmother2.Image = (Image)imagen;
+
 
 
             }
-            else if (comboBox2.Text == "ASUS PRIME B460M - A")
+            else if (comboBox2.Text == "ASUS PRIME B460M-A")
             {
                 //coneccion con la basedata
                 OleDbConnection con = new OleDbConnection(@"Provider = Microsoft.ACE.OLEDB.12.0; Data Source = nuevainfotech.accdb");
@@ -108,6 +118,8 @@ namespace info_tech
                 string canModulos = rd.GetString(0);
                 // aca abajo iria el label en donde se imprime el string previamente dicho
                 lblModulos2.Text = "Modulos:" + canModulos;
+                object imagen = Resources.ResourceManager.GetObject("mother2");
+                picmother2.Image = (Image)imagen;
 
 
             }
@@ -132,7 +144,7 @@ namespace info_tech
                 lblPuertos1.Text = "Puertos:" + canPuertos;
 
             }
-            else if (comboBox1.Text == "ASUS PRIME B460M - A")
+            else if (comboBox1.Text == "ASUS PRIME B460M-A")
             {
                 //coneccion con la basedata
                 OleDbConnection con = new OleDbConnection(@"Provider = Microsoft.ACE.OLEDB.12.0; Data Source = nuevainfotech.accdb");
@@ -168,7 +180,7 @@ namespace info_tech
 
 
             }
-            else if (comboBox2.Text == "ASUS PRIME B460M - A")
+            else if (comboBox2.Text == "ASUS PRIME B460M-A")
             {
                 //coneccion con la basedata
                 OleDbConnection con = new OleDbConnection(@"Provider = Microsoft.ACE.OLEDB.12.0; Data Source = nuevainfotech.accdb");
@@ -203,8 +215,7 @@ namespace info_tech
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var newForm = new Form1();
-            newForm.Show();
+            this.Close();
         }
     }
    
